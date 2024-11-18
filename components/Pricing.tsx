@@ -67,7 +67,7 @@ const PricingSection: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await submitToGoogleSheets(formData);
+      await submitToGoogleSheets(formData);
       
       toast({
         title: "Success!",
