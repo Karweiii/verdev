@@ -23,7 +23,7 @@ export default function Why(){
                 </CardHeader>
                 <CardContent>
                   <p>Verdev help you write efficient, resource-friendly code that reduces your digital carbon footprint. By using our platform, 
-                    you're directly contributing to a more sustainable tech industry, one line of code at a time.</p>
+                    you&rsquo;re directly contributing to a more sustainable tech industry, one line of code at a time.</p>
                 </CardContent>
               </Card>
               <Card>
@@ -34,7 +34,7 @@ export default function Why(){
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>Gain access to advanced tools that analyze your code’s energy consumption and provide actionable insights to optimize performance. 
+                  <p>Gain access to advanced tools that analyze your code&rsquo;s energy consumption and provide actionable insights to optimize performance. 
                     Our platform empowers you to make smarter, greener decisions without compromising on quality.</p>
                 </CardContent>
               </Card>

@@ -35,7 +35,7 @@ export default function Faq(){
                 <AccordionTrigger className="text-xl">Does using efficient code really make a difference?</AccordionTrigger>
                 <AccordionContent className="text-md text-[#117554] font-bold">
                 Yes! Small improvements in code efficiency can significantly reduce energy usage, especially when scaled across millions of users or devices. 
-                By adopting greener practices, developers collectively contribute to reducing the tech industry's environmental impact.
+                By adopting greener practices, developers collectively contribute to reducing the tech industry&rsquo;s environmental impact.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">

@@ -1,7 +1,6 @@
 'use client'
 
-import { useState,useEffect, ChangeEvent,FormEvent } from "react"
-import Link from "next/link"
+import {useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Faq from "@/components/Faq"
 import Navbar from "@/components/Navbar"
@@ -9,6 +8,7 @@ import Footer from "@/components/Footer"
 import PricingSection from "@/components/Pricing"
 import Contact from "@/components/Contact"
 import Why from "@/components/Why"
+import Image from "next/image"
 
 
 export default function Home() {
@@ -65,7 +65,7 @@ export default function Home() {
                 Join us on our journey to revolutionize coding practices and tackle the growing issue of digital carbon emissions. Together, we can make a difference, 
                 one line of code at a time.
               </p>
-              <img src="/logo.png" alt="Code" className="  mx-auto w-[250px] md:max-w-none h-[250px] " />
+              <Image src="/logo.png" alt="Code" className="  mx-auto w-[250px] md:max-w-none h-[250px] " width={250} height={250} />
             </div>
             
           </div>

@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 import { FaXTwitter ,FaInstagram  , FaLinkedinIn  } from "react-icons/fa6";
 export default function Footer(){
   const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {

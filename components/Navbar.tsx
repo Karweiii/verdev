@@ -1,9 +1,7 @@
-import Link from "next/link"
 import { useState, useEffect } from "react"
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
