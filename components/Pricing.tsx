@@ -129,7 +129,7 @@ const PricingSection: React.FC = () => {
                     <DialogHeader>
                       <DialogTitle>Subscribe to {plan.name} Plan</DialogTitle>
                       <DialogDescription>
-                        Enter your details to subscribe to the {plan.name} plan. We'll never share your information.
+                        Enter your details to subscribe to the {plan.name} plan. We&rsquo;ll never share your information.
                       </DialogDescription>
                     </DialogHeader>
                     <form onSubmit={handleSubmit}>

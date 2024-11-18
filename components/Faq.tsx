@@ -27,7 +27,7 @@ export default function Faq(){
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-xl">How does the platform help developers code smarter?</AccordionTrigger>
                 <AccordionContent className="text-md text-[#117554] font-bold">
-                We offer tools that analyze your code's efficiency, identify areas of high resource usage, 
+                We offer tools that analyze your code&rsquo;s efficiency, identify areas of high resource usage, 
                 and provide actionable recommendations. Our insights guide you toward writing optimized, energy-efficient code without compromising functionality or performance.
                 </AccordionContent>
               </AccordionItem>
