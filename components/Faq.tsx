@@ -42,10 +42,10 @@ export default function Faq() {
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger className="text-xl">
-            Can I export my app's code?
+            Can I export my app&apos;s code?
             </AccordionTrigger>
             <AccordionContent className="text-md text-[#6A82FB] font-bold">
-            Yes, with the Pro and Enterprise plans, you can export your app's code if you wish to self-host or further customize it.
+            Yes, with the Pro and Enterprise plans, you can export your app&apos;s code if you wish to self-host or further customize it.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
