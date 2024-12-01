@@ -53,7 +53,7 @@ export default function Faq() {
             What industries is SwiftDev suitable for?
             </AccordionTrigger>
             <AccordionContent className="text-md text-[#6A82FB] font-bold">
-            SwiftDev is versatile and works for any industry. Whether you’re creating an e-commerce store, a blog, a portfolio site, or a SaaS product, SwiftDev has you covered.
+            SwiftDev is versatile and works for any industry. Whether you&apos;re creating an e-commerce store, a blog, a portfolio site, or a SaaS product, SwiftDev has you covered.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
