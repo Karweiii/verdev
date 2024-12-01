@@ -76,20 +76,12 @@ export default function Home() {
             </h2>
             <div className="flex flex-col-reverse md:flex-row justify-between">
               <p className="mt-4 md:w-[70%] text-muted-foreground md:text-xl">
-                At Verdev, we believe that every line of code matters. As the
-                digital world continues to grow, so does its environmental
-                impact. The energy consumed by inefficient coding practices
-                contributes to the global carbon footprint. Our mission is
-                simple: help developers write greener, more efficient code that
-                uses fewer resources and reduces energy consumption.We provide
-                cutting-edge tools, real-time insights, and practical strategies
-                to help you optimize your code for sustainability. By promoting
-                energy-efficient development practices, we aim to create a
-                community of developers who care about the environment and are
-                committed to building a greener, more sustainable future in
-                tech. Join us on our journey to revolutionize coding practices
-                and tackle the growing issue of digital carbon emissions.
-                Together, we can make a difference, one line of code at a time.
+              Welcome to SwiftDev – Your Gateway to Effortless Web App Creation!
+              At SwiftDev, we make building full-stack web applications as easy as a few clicks. 
+              Whether you're a startup founder, small business owner, or an aspiring entrepreneur, 
+              SwiftDev empowers you to create stunning, fully functional web apps—no coding skills required.
+              Our intuitive platform combines pre-built templates, drag-and-drop tools, and AI-powered automation to 
+              help you go from idea to deployment faster than ever before.
               </p>
             </div>
           </div>

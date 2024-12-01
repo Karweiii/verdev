@@ -31,6 +31,7 @@ interface FormDataFields {
 interface PricingPlan {
   name: string;
   price: string;
+  description:string;
   features: string[];
 }
 
@@ -38,17 +39,20 @@ const pricingPlans: PricingPlan[] = [
   {
     name: "Basic",
     price: "Free",
-    features: ["Feature 1", "Feature 2", "Feature 3"],
+    description:"Perfect for individuals and small projects.",
+    features: ["Drag-and-drop builder", "Access to 10+ pre-built templates", "Up to 5 pages per app","1GB storage","Basic hosting included"],
   },
   {
     name: "Pro",
     price: "$20/month",
-    features: ["Feature A", "Feature B", "Feature C"],
+    description:"Ideal for startups and growing businesses.",
+    features: ["Everything in Basic","Access to 50+ templates", "Unlimited pages per app", "10GB storage","Custom domain support","Advanced integrations (e.g., payment gateways)","AI-powered features like auto-layout suggestions"],
   },
   {
     name: "Enterprise",
     price: "$50/month",
-    features: ["Feature X", "Feature Y", "Feature Z"],
+    description:"Tailored for large organizations.",
+    features: ["Everything in Pro","White-label branding", "Dedicated account manager", "API access and advanced customizations","Unlimited storage","Priority customer support"],
   },
 ];
 
@@ -133,14 +137,14 @@ const PricingSection: React.FC = () => {
                   {plan.name}
                 </CardTitle>
                 <CardDescription>
-                  Perfect for {plan.name.toLowerCase()} users
+                    {plan.description}
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-4xl font-bold">{plan.price}</p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-4 space-y-2 px-4">
                   {plan.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
+                    <li className="list-disc list-inside" key={index}>{feature}</li>
                   ))}
                 </ul>
               </CardContent>
