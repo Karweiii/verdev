@@ -52,13 +52,13 @@ export default function Home() {
           <div className="relative z-10">
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center space-y-4 text-center">
-                <h1 className="text-2xl font-bold text-black tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl/none text-white">
+                <h1 className="text-2xl font-bold text-black tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl/none ">
                   YOUR ALL IN ONE
                 </h1>
                 <h1 className="text-3xl font-bold text-white tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none ">
                   WEBSITE BUILDER
                 </h1>
-                <p className="mx-auto font-medium text-black italic max-w-[650px] text-white md:text-xl">
+                <p className="mx-auto font-medium text-black italic max-w-[650px] md:text-xl">
                   Drag, Drop, Develop - Your Website, You Way!
                 </p>
                 <Button size="lg" onClick={(e) => handleNavClick(e, "intro")}>
