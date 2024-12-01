@@ -106,14 +106,14 @@ const PricingSection: React.FC = () => {
     return (
         <section id='pricing' className="w-full py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-[#15B392]">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-[#6A82FB]">
                     Pricing Plans
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {pricingPlans.map((plan) => (
                         <Card key={plan.name} className="flex flex-col">
                             <CardHeader>
-                                <CardTitle className='text-2xl text-[#117554]'>{plan.name}</CardTitle>
+                                <CardTitle className='text-2xl text-[#6A82FB]'>{plan.name}</CardTitle>
                                 <CardDescription>Perfect for {plan.name.toLowerCase()} users</CardDescription>
                             </CardHeader>
                             <CardContent className="flex-grow">
@@ -128,7 +128,7 @@ const PricingSection: React.FC = () => {
                                 <Dialog open={dialogOpen && selectedPlan === plan.name} onOpenChange={setDialogOpen}>
                                     <DialogTrigger asChild>
                                         <Button 
-                                            className="w-full bg-[#54C392] hover:bg-[#117554] text-lg w-[50%] mx-auto" 
+                                            className="w-full bg-[#6A82FB] hover:bg-[#4A63C9] text-lg w-[50%] mx-auto" 
                                             onClick={() => handlePlanSelect(plan.name)}
                                         >
                                             Choose {plan.name}

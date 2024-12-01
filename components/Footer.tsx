@@ -12,7 +12,7 @@ export default function Footer(){
       <div className="container px-4 md:px-6">
         <div className="flex flex-cols-1 justify-between">
           <div className="space-y-3">
-            <h3 className="text-2xl font-semibold text-[#15B392]">Verdev</h3>
+            <h3 className="text-2xl font-semibold text-[#6A82FB]">SwiftDev</h3>
             <p className="text-sm text-muted-foreground">© 2024 Verdev. All rights reserved.</p>
             <div className="flex space-x-3">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

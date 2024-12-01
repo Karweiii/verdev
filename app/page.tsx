@@ -36,26 +36,39 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="hero" className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-[url('/Foambg.svg')] bg-center bg-cover">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                Get to know <span className="text-[#15B392]">Verdev</span>
-              </h1>
-              <p className="mx-auto font-medium italic max-w-[650px] text-white-foreground md:text-xl">
-              Code Greener, Build Smarter: Empowering Developers for a Sustainable Future
-              </p>
-              <Button size="lg" onClick={(e) => handleNavClick(e, 'intro')}>Get Started</Button>
-              
-              
+        <section id="hero" className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-muted">
+          {/* Foam Background Image */}
+          <div
+            className="absolute inset-0 bg-[url('/Foambg.svg')] bg-no-repeat bg-center bg-contain z-0"
+            aria-hidden="true"
+          ></div>
+
+          {/* Content */}
+          <div className="relative z-10">
+            <div className="container px-4 md:px-6">
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <h1 className="text-2xl font-bold text-black tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl/none text-white">
+                  YOUR ALL IN ONE 
+                </h1>
+                <h1 className="text-3xl font-bold text-white tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none ">
+                  WEBSITE BUILDER
+                </h1>
+                <p className="mx-auto font-medium text-black italic max-w-[650px] text-white md:text-xl">
+                Drag, Drop, Develop - Your Website, You Way!
+                </p>
+                <Button size="lg" onClick={(e) => handleNavClick(e, 'intro')}>
+                  Get Started
+                </Button>
+              </div>
             </div>
           </div>
         </section>
 
+
         {/* Intro Section */}
         <section id="intro" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About <span className="text-[#15B392]">Verdev</span></h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About <span className="text-[#6A82FB]">SwiftDev</span></h2>
             <div className="flex flex-col-reverse md:flex-row justify-between">
               <p className="mt-4 md:w-[70%] text-muted-foreground md:text-xl">
                 At Verdev, we believe that every line of code matters. As the digital world continues to grow, so does its environmental impact. The energy consumed by inefficient coding 
@@ -65,7 +78,6 @@ export default function Home() {
                 Join us on our journey to revolutionize coding practices and tackle the growing issue of digital carbon emissions. Together, we can make a difference, 
                 one line of code at a time.
               </p>
-              <Image src="/logo.png" alt="Code" className="  mx-auto w-[250px] md:max-w-none h-[250px] " width={250} height={250} />
             </div>
             
           </div>

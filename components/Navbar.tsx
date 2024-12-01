@@ -26,10 +26,10 @@ export default function Navbar(){
     setIsOpen(false)
   }
     return (
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky md:px-6 px-2  top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <a href="#" className="flex items-center space-x-2 ml-4 md:ml-0" onClick={(e) => handleNavClick(e, 'hero')}>
-          <span className="font-bold text-xl">Verdev</span>
+        <a href="#" className="flex items-center space-x-2 " onClick={(e) => handleNavClick(e, 'hero')}>
+          <span className="font-bold text-xl text-[#6C63FF]">SwiftDev</span>
         </a>
         <nav className="ml-auto hidden md:flex gap-4">
           <a href="#intro" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'intro')}>

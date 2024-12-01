@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-
+import { Metadata } from "next";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -13,6 +13,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+
+export const metadata: Metadata = {
+  title: 'SwiftDev',
+  description: 'NFT-based Event Platform',
+};
 
 export default function RootLayout({
   children,
