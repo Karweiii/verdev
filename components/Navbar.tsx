@@ -1,56 +1,87 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
-import { Menu } from 'lucide-react'
-export default function Navbar(){
-  const [isOpen, setIsOpen] = useState(false)
+} from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    document.documentElement.style.scrollBehavior = 'smooth'
+    document.documentElement.style.scrollBehavior = "smooth";
     return () => {
-      document.documentElement.style.scrollBehavior = 'auto'
-    }
-  }, [])
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, []);
 
-  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    event.preventDefault()
-    const targetElement = document.getElementById(targetId)
+  const handleNavClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string,
+  ) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' })
+      targetElement.scrollIntoView({ behavior: "smooth" });
     }
-    setIsOpen(false)
-  }
-    return (
-      <header className="sticky md:px-6 px-2  top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    setIsOpen(false);
+  };
+  return (
+    <header className="sticky md:px-6 px-2  top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <a href="#" className="flex items-center space-x-2 " onClick={(e) => handleNavClick(e, 'hero')}>
+        <a
+          href="#"
+          className="flex items-center space-x-2 "
+          onClick={(e) => handleNavClick(e, "hero")}
+        >
           <span className="font-bold text-xl text-[#6C63FF]">SwiftDev</span>
         </a>
         <nav className="ml-auto hidden md:flex gap-4">
-          <a href="#intro" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'intro')}>
+          <a
+            href="#intro"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            onClick={(e) => handleNavClick(e, "intro")}
+          >
             About
           </a>
-          <a href="#why-choose-us" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'why-choose-us')}>
+          <a
+            href="#why-choose-us"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            onClick={(e) => handleNavClick(e, "why-choose-us")}
+          >
             Why Choose Us
           </a>
-          <a href="#pricing" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'pricing')}>
+          <a
+            href="#pricing"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            onClick={(e) => handleNavClick(e, "pricing")}
+          >
             Pricing
           </a>
-          <a href="#faq" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'faq')}>
+          <a
+            href="#faq"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            onClick={(e) => handleNavClick(e, "faq")}
+          >
             FAQ
           </a>
-          <a href="#contact" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'contact')}>
+          <a
+            href="#contact"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            onClick={(e) => handleNavClick(e, "contact")}
+          >
             Contact
           </a>
         </nav>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="ml-auto md:hidden rounded-full">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="ml-auto md:hidden rounded-full"
+            >
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>
             </Button>
@@ -60,19 +91,39 @@ export default function Navbar(){
               <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4">
-              <a href="#intro" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'intro')}>
+              <a
+                href="#intro"
+                className="text-sm font-medium hover:underline underline-offset-4"
+                onClick={(e) => handleNavClick(e, "intro")}
+              >
                 About
               </a>
-              <a href="#why-choose-us" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'why-choose-us')}>
+              <a
+                href="#why-choose-us"
+                className="text-sm font-medium hover:underline underline-offset-4"
+                onClick={(e) => handleNavClick(e, "why-choose-us")}
+              >
                 Why Choose Us
               </a>
-              <a href="#pricing" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'pricing')}>
+              <a
+                href="#pricing"
+                className="text-sm font-medium hover:underline underline-offset-4"
+                onClick={(e) => handleNavClick(e, "pricing")}
+              >
                 Pricing
               </a>
-              <a href="#faq" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'faq')}>
+              <a
+                href="#faq"
+                className="text-sm font-medium hover:underline underline-offset-4"
+                onClick={(e) => handleNavClick(e, "faq")}
+              >
                 FAQ
               </a>
-              <a href="#contact" className="text-sm font-medium hover:underline underline-offset-4" onClick={(e) => handleNavClick(e, 'contact')}>
+              <a
+                href="#contact"
+                className="text-sm font-medium hover:underline underline-offset-4"
+                onClick={(e) => handleNavClick(e, "contact")}
+              >
                 Contact
               </a>
             </nav>
@@ -80,5 +131,5 @@ export default function Navbar(){
         </Sheet>
       </div>
     </header>
-    )
+  );
 }

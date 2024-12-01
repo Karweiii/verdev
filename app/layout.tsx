@@ -13,10 +13,9 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
 export const metadata: Metadata = {
-  title: 'SwiftDev',
-  description: 'NFT-based Event Platform',
+  title: "SwiftDev",
+  description: "NFT-based Event Platform",
 };
 
 export default function RootLayout({
