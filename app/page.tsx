@@ -8,7 +8,6 @@ import Footer from "@/components/Footer";
 import PricingSection from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Why from "@/components/Why";
-import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
