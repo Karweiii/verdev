@@ -9,7 +9,7 @@ export default function Contact() {
         </h2>
         <div className="flex justify-center space-x-8">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/swift.dev_/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground border-2 border-muted-foreground hover:border-white   p-2 rounded-full hover:bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] hover:text-white transition-colors"
