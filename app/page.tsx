@@ -78,7 +78,7 @@ export default function Home() {
               <p className="mt-4 md:w-[70%] text-muted-foreground md:text-xl">
               Welcome to SwiftDev – Your Gateway to Effortless Web App Creation!
               At SwiftDev, we make building full-stack web applications as easy as a few clicks. 
-              Whether you're a startup founder, small business owner, or an aspiring entrepreneur, 
+              Whether you&apos;re a startup founder, small business owner, or an aspiring entrepreneur, 
               SwiftDev empowers you to create stunning, fully functional web apps—no coding skills required.
               Our intuitive platform combines pre-built templates, drag-and-drop tools, and AI-powered automation to 
               help you go from idea to deployment faster than ever before.
