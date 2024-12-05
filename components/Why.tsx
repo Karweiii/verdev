@@ -65,7 +65,7 @@ export default function Why() {
           </div>
         </div>
 
-  <div className="flex justify-center gap-4 p-6">
+  <div className="flex flex-wrap justify-center gap-4 p-6">
     
     <div className="w-full sm:w-1/3 p-2 text-center">
     <Card>

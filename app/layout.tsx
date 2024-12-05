@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "SwiftDev",
-  description: "NFT-based Event Platform",
+  description: "Low-code Web Dev Platform",
 };
 
 export default function RootLayout({

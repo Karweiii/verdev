@@ -43,7 +43,7 @@ export default function Home() {
         >
           {/* Foam Background Image */}
           <div
-            className="absolute inset-0 bg-[url('/Foambg.svg')] bg-no-repeat bg-center bg-contain z-0"
+            className="absolute inset-0 bg-[url('/Foambg.svg')] bg-no-repeat bg-center bg-contain bg-[length:150%] z-0"
             aria-hidden="true"
           ></div>
 
